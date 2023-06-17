@@ -43,11 +43,8 @@ jobs:
         with: 
           python-version: "3.x"
 
-      - name: Install Dependency
-        run: pip install Cython wheel
-
       - name: Build sdist
-        run: python setup.py bdist_wheel
+        run: python setup.py sdist
 
       - uses: actions/upload-artifact@v2
         with:
