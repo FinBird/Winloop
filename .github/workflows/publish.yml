@@ -44,7 +44,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install Dependency
-        run: pip install Cython
+        run: pip install Cython wheel
 
       - name: Build sdist
         run: python setup.py bdist_wheel
