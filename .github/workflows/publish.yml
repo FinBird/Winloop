@@ -43,7 +43,7 @@ jobs:
         with: 
           python-version: "3.x"
 
-      - name：Install Cython
+      - name: Install Dependency
         run: pip install Cython
 
       - name: Build sdist
